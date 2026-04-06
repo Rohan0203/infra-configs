@@ -1,0 +1,14 @@
+intake_id: I-123456
+bucket_name: prd-lh1-agtr-src
+bucket_description: "For testing data pipeline"
+aws_account_id: '904233109241'
+aws_region: us-east-1
+usage_type: Raw
+enterprise_or_func_name: AGTR
+enterprise_or_func_subgrp_name: ""
+
+# Security Configuration
+versioning_enabled: false
+public_access_blocked: true
+encryption_enabled: true
+encryption_type: SSE-S3
