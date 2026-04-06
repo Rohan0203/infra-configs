@@ -1,0 +1,22 @@
+intake_id: M-0000517
+role_name: agtr-apac-prd-procdataengineer
+role_description: "IAM role to serve Data Engineering Use Cases in Lakehouse"
+aws_account_id: '904233109241'
+enterprise_or_func_name: AGTR
+enterprise_or_func_subgrp_name: APAC
+role_owner: "abc_xyz@cargill.com"
+data_env: prd
+usage_type: "DataEngineer"
+access_to_resources:
+    glue_databases:
+        write:
+          - lh_cacp_raw_prd
+        read:
+          - lh_agrosoft_raw_prd
+    data_prefixes:
+      - "s3://prd-lh1-agtr-src/raw/merged/prd/src/cacp/"
+    execution_asset_prefixes:
+      - "s3://prd-lh1-agtr-eng-assets/prd/apac/athena/"
+      - "s3://prd-lh1-agtr-eng-assets/prd/apac/glue/"
+      - "s3://prd-lh1-agtr-scripts/prd/apac/glue/"
+principal_role_arn: "arn:aws:iam::703540130218:user/nmib0000-s"
