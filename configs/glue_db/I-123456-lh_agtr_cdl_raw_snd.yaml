@@ -1,0 +1,16 @@
+intake_id: I-123456
+database_name: lh_agtr_cdl_raw_snd
+database_s3_location: "s3://snd-lh1-agtr-src/raw"
+database_description: "Raw data for AGTR CDL"
+catalog_name: '904233109241'
+aws_account_id: '904233109241'
+region: us-east-1
+data_construct: src
+data_env: snd
+data_layer: raw
+source_name: agtr_cdl
+data_classifier: "raw"
+enterprise_or_func_name: AGTR
+enterprise_or_func_subgrp_name: CDL
+data_owner_email: "owner@company.com"
+data_owner_github_uname: agtr-owner
